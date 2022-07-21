@@ -12,9 +12,9 @@ This script can be run on a physical or virtual Check Point appliance, configure
 
 1. Install GAIA using ISOmorphic or using a bootable ISO on your physical or virtual hardware.
 2. Connect via SSH or console to the system.
-3. Copy or use `vi` to place the `ftw-cli-run.sh` file under some directory like `/home/admin`.
-4. Run `chmod +x ftw-cli-run.sh` to make the script executable.
-5. Run the script using `./ftw-cli-run.sh`.
+3. Copy or use `vi` to place the `ftw_cli_run.sh` file under some directory like `/home/admin`.
+4. Run `chmod +x ftw_cli_run.sh` to make the script executable.
+5. Run the script using `./ftw_cli_run.sh`.
 6. Follow the prompts!
 
 
