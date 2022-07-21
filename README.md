@@ -13,6 +13,6 @@ More details will be added here soon.
 
 # Reference
 
-- ![sk71000](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk71000) - Overview of the First-Time Configuration Wizard
-- ![sk69701](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk69701) - Overview of using `config_system`
-- ![GAIA R81 Administration Guide](https://sc1.checkpoint.com/documents/R81/WebAdminGuides/EN/CP_R81_Gaia_AdminGuide/Topics-GAG/Running-FTCW-in-CLI-Expert-Mode.htm) - Detailed use of `config_system`
+- [sk71000](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk71000) - Overview of the First-Time Configuration Wizard
+- [sk69701](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk69701) - Overview of using `config_system`
+- [GAIA R81 Administration Guide](https://sc1.checkpoint.com/documents/R81/WebAdminGuides/EN/CP_R81_Gaia_AdminGuide/Topics-GAG/Running-FTCW-in-CLI-Expert-Mode.htm) - Detailed use of `config_system`
