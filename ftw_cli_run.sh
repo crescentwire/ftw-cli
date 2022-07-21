@@ -4,6 +4,8 @@
 # Freely distribute and re-use as needed, but please give original credit to
 # the author above. Enjoy!
 
+# Please note this version is intended ONLY for security gateways!
+
 # Runs through first-time wizard steps, using an external file of referenced values
 
 timestamp=$(date +%Y%m%d-%H%M%S)
