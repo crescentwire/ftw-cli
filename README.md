@@ -8,9 +8,14 @@ Created by Michael Ibarra, Check Point Security Engineer, in July 2022. Feel fre
 
 
 # How to Use
-This script can be run on a physical or virtual Check Point appliance, configured as a gateway. (Management is possible, but is outside the scope of this script (for now!).) 
+This script can be run on a physical or virtual Check Point appliance, configured as a gateway. (Management is possible, but is outside the scope of this script for now.)
 
-More details will be added here soon.
+1. Install GAIA using ISOmorphic or using a bootable ISO on your physical or virtual hardware.
+2. Connect via SSH or console to the system.
+3. Copy or use `vi` to place the `ftw-cli-run.sh` file under some directory like `/home/admin`.
+4. Run `chmod +x ftw-cli-run.sh` to make the script executable.
+5. Run the script using `./ftw-cli-run.sh`.
+6. Follow the prompts!
 
 
 # Reference
