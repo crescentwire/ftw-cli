@@ -1,0 +1,207 @@
+#########################################################################
+#                                                                       #
+#                       Products configuration                          #
+#                                                                       #
+#    For keys below set "true"/"false" after '='  within the quotes     #
+#########################################################################
+
+# Install Security Gateway.
+install_security_gw=
+
+# Enable DAIP (dynamic ip) gateway.
+# Should be "false" if CXL or Security Management enabled
+gateway_daip="false"
+
+# Enable/Disable CXL.
+gateway_cluster_member=
+
+# Install Security Management.
+install_security_managment=
+
+# Optional parameters, only one of the parameters below can be "true".
+# If no primary of secondary specified, log server will be installed.
+# Requires Security Management to be installed.
+install_mgmt_primary=
+install_mgmt_secondary=
+
+# Provider-1 parameters
+# e.g: install_mds_primary=true
+#      install_mds_secondary=false
+#      install_mlm=false
+#      install_mds_interface=eth0
+install_mds_primary=
+install_mds_secondary=
+install_mlm=
+install_mds_interface=
+
+# Automatically download and install Blade Contracts, new software, and other important data (highly recommended)
+# It is highly recommended to keep this setting enabled, to ensure smooth operation of Check Point products.
+# for more info see sk94508
+#
+# possible values: "true" / "false"
+download_info="true"
+
+# Improve product experience by sending data to Check Point
+# If you enable this setting, the Security Management Server and Security Gateways may upload data that will
+# help Check Point provide you with optimal services.
+# for more info see sk94509
+#
+# possible values: "true" / "false"
+upload_info="false"
+
+# Improve product experience by sending crash data which might contain personal data to Check Point.
+#
+# possible values: "true" / "false"
+upload_crash_data="false"
+
+# In case of Smart1 SmartEvent appliance, choose
+# Security Management only, log server will be installed automatically
+
+#########################################################################
+#                                                                       #
+#                       Products Parameters                             #
+#                                                                       #
+#               For keys below set value after '='                      #
+#########################################################################
+
+# Management administrator configuration
+# Set to "gaia_admin" if you wish to use the Gaia 'admin' account.
+# Set to "new_admin" if you wish to configure a new admin account.
+# Must be provided, if Security Management installed
+mgmt_admin_radio=
+
+# In case you chose to configure a new Management admin account,
+# you must fill in the credentials.
+# Management administrator name
+mgmt_admin_name=
+
+# Management administrator password
+mgmt_admin_passwd=
+
+# Management GUI clients
+# choose which GUI clients can log into the Security Management
+# (e.g. any, 1.2.3.4, 192.168.0.0/24)
+#
+# Set to "any" if any host allowed to connect to management
+# Set to "range" if range of IPs allowed to connect to management
+# Set to "network" if IPs from specific network allowed to connect
+# to management
+# Set to "this" if it' a single IP
+# Must be provided if Security Management installed
+mgmt_gui_clients_radio=
+#
+# In case of "range", provide the first and last IPs in dotted format
+mgmt_gui_clients_first_ip_field=
+mgmt_gui_clients_last_ip_field=
+#
+# In case of "network", provide IP in dotted format and netmask length
+# in range 1-32
+mgmt_gui_clients_ip_field=
+mgmt_gui_clients_subnet_field=
+#
+# In case of a single IP
+mgmt_gui_clients_hostname=
+
+# Secure Internal Communication key, e.g. "aaaa"
+# Must be provided, if primary Security Management not installed
+ftw_sic_key=
+
+# Management as a service
+# optional parameter for security_gateway only
+maas_authentication_key=
+#########################################################################
+#                                                                       #
+#       Operating System configuration - optional section               #
+#                                                                       #
+#               For keys below set value after '='                      #
+#########################################################################
+
+# Password (hash) of user admin.
+# To get hash of admin password from configured system:
+#       dbget passwd:admin:passwd
+# OR
+#       grep admin /etc/shadow | cut -d: -f2
+#
+# IMPORTANT! In order to preserve the literal value of each character
+# in hash, enclose hash string within the quotes.
+#       e.g admin_hash='put_here_your_hash_string'
+#
+# Optional parameter
+admin_hash=''
+
+# Interface name, optional parameter
+iface=
+
+# Management interface IP in dotted format (e.g. 1.2.3.4),
+# management interface mask length (in range 0-32, e,g 24 ) and
+# default gateway.
+# Pay attention, that if you run first time configuration remotely
+# and you change IP, in order to maintain the connection,
+# an old IP address will be retained  as a secondary IP address.
+# This secondary IP address can be delete later.
+# Your session will be disconnected after first time configuration
+# process.
+# Optional parameter, requires "iface" to be specified
+# IPv6 address format: 0000:1111:2222:3333:4444:5555:6666:7777
+# ipstat_v4 manually/off
+# ipstat_v6 manually/off
+ipstat_v4=manually
+ipaddr_v4=
+masklen_v4=
+default_gw_v4=
+
+ipstat_v6=off
+ipaddr_v6=
+masklen_v6=
+default_gw_v6=
+
+# Host Name e.g host123, optional parameter
+hostname=
+
+# Domain Name e.g. checkpoint.com, optional parameter
+domainname=
+
+# Time Zone in format Area/Region (e.g America/New_York or Etc/GMT-5)
+# Pay attention that GMT offset should be in classic UTC notation:
+# GMT-5 is 5 hours behind UTC (i.e. west to Greenwich)
+# Enclose time zone string within the quotes.
+# Optional parameter
+timezone=''
+
+# NTP servers
+# NTP parameters are optional
+ntp_primary=
+ntp_primary_version=
+ntp_secondary=
+ntp_secondary_version=
+
+# DNS - IP address of primary, secondary, tertiary DNS servers
+# DNS parameters are optional.
+primary=
+secondary=
+tertiary=
+
+# Proxy Settings - Address and port of Proxy server
+# Proxy Settings are optional
+proxy_address=
+proxy_port=
+
+#########################################################################
+#                                                                       #
+#                       Scalable Platforms parameters                   #
+#                                                                       #
+#    For keys below set "true"/"false" after '='  within the quotes     #
+#########################################################################
+# Optional parameter, if not specified the default is false
+install_security_vsx=
+sg_cluster_id=
+
+
+#########################################################################
+#                                                                       #
+#                       Post installation parameters                    #
+#                                                                       #
+#    For keys below set "true"/"false" after '='  within the quotes     #
+#########################################################################
+# Optional parameter, if not specified the default is false
+reboot_if_required=
